@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+  </head>
+  <body>
+    <style>
+    </style>
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><i class="fa-solid fa-paper-plane"></i><span>T</span>ravel</a>
+    
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        </header>
+
+       
+        <!--home section starts-->
+        <div class="home-section">
+          <div image="center">
+            <section class="home" id="home">
+              <div class="container">
+     
+                <div class="inner">
+                <p>LIFE IS SHORT AND THE WORLD IS WIDE</p>
+                <p>TO TRAVEL IS TO LIVE</p>
+                <a href="#">Discover More</a>
+                </div>
+                </div>
+                </div>
+              </section>
+              </div>
+        </div>
+        <br></br>
+        <!---home section ends-->
+
+        <!-- book section starts  -->
+
+ <section class="book" id="book">
+  <div class="row">
+
+      <div class="image">
+          <img src="images/book.jpeg" alt="">
+      </div>
+
+      <form action="/adduser">
+          <div class="inputBox">
+              <h3>where to</h3>
+              <input type="text" name="destination"placeholder="place name">
+          </div>
+          <div class="inputBox">
+              <h3>how many</h3>
+              <input type="number"name="guests" placeholder="number of guests">
+          </div>
+          <div class="inputBox">
+              <h3>arrivals</h3>
+              <input type="text" name="adate">
+          </div>
+          <div class="inputBox">
+              <h3>leaving</h3>
+              <input type="text" name="ldate">
+          </div>
+          <input type="submit" class="btn" value="book now">
+      </form>
+           {{#if msg}}
+          <h3>User Added</h3>
+          {{/if}}
+  </div>
+
+</section> 
+
+<!-- book section ends -->
+
+
+        <!--gallery section starts-->
+
+       <section class="gallery" id="gallery">
+        <div class="gallery-heading">
+        <h1>GALLERY</h1>
+          <span>We Capture Memories</span>
+      </div>
+
+        <div class="gallery-container">
+          <div class="gallery">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+              <h3>amazing places</h3>
+              <p>SYDNEY <br>Sydney is a city that wraps itself closely against its best asset the Sydney Harbour. </p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+              <h3>amazing places</h3>
+              <p>PARIS<br>The Eiffel Tower is the iconic symbol ,it is recently reached a milestone.</p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+              <h3>amazing places</h3>
+              <p>NEW YORK<br>New York City hosts infinite urban adventures: You can wander through Central Park.</p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+              <h3>amazing places</h3>
+              <p> VICTORIA FALLS<br>Victoria Falls is one of the Seven Natural Wonders of the World.</p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+              <h3>amazing places</h3>
+              <p>MALDIVES<br>The Maldives is a nation of islands in the Indian Ocean, that spans across the equator. </p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+              <h3>amazing places</h3>
+              <p>YELLOWSTONE<br>Yellowstone National Park is an American national park located in western United States.</p>
+            </div>
+          </div>
+      
+
+        <div class="gallery">
+          <img src="images/g-7.jpg" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>PHUKET<br>phuket is a city in the southeast of Phuket Island, Thailand.   </p>
+          </div>
+        </div>
+  
+
+      <div class="gallery">
+        <img src="images/g-8.jpg" alt="">
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>RIO DE JANERIO<br>Rio de Janeiro is well known for the beauty of its beaches and of its peaks, ridges, and hills.</p>
+        </div>
+      </div>
+       </section>
+       <br></br>
+
+       <!---gallery section ends-->
+
+
+
+
+
+
+        <!-- packages section starts -->
+        <section class="packages" id="packages">
+            <div class="packages-heading">
+              <h1>PACKAGES</h1>
+             <dfn ><span>Top Destinations</span></dfn>
+            </div>
+        
+
+          <div class="box-container">
+             <div class="box">
+                <div class="image">
+                   <img src="images/city-1.jpg" alt="">
+                </div>
+                <div class="content">
+                   <h3><i class="fas fa-map-marker-alt"></i>Europe</h3>
+                   <p>Europe is a landmass, which is either considered a continent in its own right or a subcontinent of Eurasia, located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.</p>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                   </div>
+                   <div class="price"> $600.00 </div>
+                   <a href="#book" class="btn">Book Now</a>
+                </div>
+             </div>
+       
+             <div class="box">
+                <div class="image">
+                   <img src="images/city-2.jpg" alt="">
+                </div>
+                <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i>Singapore</h3>
+                  <p>Singapore is a sovereign island country and city-state in maritime Southeast Asia. It has the third highest population density in the world.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  <div class="price"> $600.00 </div>
+                  <a href="#book" class="btn">Book Now</a>
+                </div>
+             </div>
+       
+             <div class="box">
+                <div class="image">
+                   <img src="images/city-3.jpg" alt="">
+                </div>
+                <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i>France</h3>
+                  <p>France is a transcontinental country spanning Western Europe and overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $600.00 </div>
+                  <a href="#book" class="btn">Book Now</a>
+                </div>
+             </div>
+             
+       
+             <div class="box">
+                <div class="image">
+                   <img src="images/city-4.jpg" alt="">
+                </div>
+                <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i>Dubai</h3>
+                  <p>Dubai is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="far fa-star"></i>
+                     <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $600.00 </div>
+                  <a href="#book" class="btn">Book Now</a>
+                </div>
+             </div>
+       
+             <div class="box">
+                <div class="image">
+                   <img src="images/city-5.jpg"alt="">
+                </div>
+                <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i>Germany</h3>
+                  <p>Germany is a country in Central Europe. It is the second most populous country in Europe after Russia, and the most populous member state of the European Union.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="far fa-star"></i>
+                     <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $600.00 </div>
+                  <a href="#book" class="btn">Book Now</a>
+                </div>
+             </div>
+       
+             <div class="box">
+                <div class="image">
+                   <img src="images/city-6.jpeg" alt="">
+                </div>
+                <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i>Mauritius</h3>
+                  <p>Mauritius is an island nation in the Indian Ocean about 2,000 kilometres off the southeast coast of the African continent, east of Madagascar.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $600.00 </div>
+                  <a href="#book" class="btn">Book Now</a>
+                </div>
+             </div>
+       </section>
+       
+       <!-- packages section ends -->
+        
+
+      <!--service section starts-->
+    
+  <section class="services" id="services">
+   <div class="services-heading">
+    <h1>OUR SERVICES</h1>
+   </div>
+    <div class="box-container">
+
+       <div class="box">
+           <img src="images/1.png" alt="">
+           <h3>Adventure</h3>
+       </div>
+
+       <div class="box">
+           <img src="images/2.png" alt="">
+           <h3>Tour Guide</h3>
+       </div>
+
+       <div class="box">
+           <img src="images/3.png" alt="">
+           <h3>Trekking</h3>
+           <br></br>
+       </div>
+
+       <div class="box">
+           <img src="images/4.png" alt="">
+           <h3>Off Road</h3>
+       </div>
+
+       <div class="box">
+           <img src="images/5.png" alt="">
+           <h3>Mountain Climbing</h3>
+       </div>
+
+       <div class="box">
+           <img src="images/6.png" alt="">
+           <h3>Skiing</h3>
+       </div>
+    </div>
+
+   
+</section>
+<!-- services section ends  -->
+<script src="script.js"></script>
+
+
+
+
+       <!-- review start-->
+    <section id="review">
+      <!--heading-->
+      <div class="review-heading">
+          <span>Comments</span>
+          <h1>REVIEW</h1>
+      </div>
+      <div class="review-box-container">
+          <div class="review-box">
+              <div class="box-top">
+                  <div class="profile"></div>
+                      <div class="profile-img">
+                          <img src="images/image-1.jpeg">
+                      </div>
+                      <div class="name-user">
+                          <strong>Engin Akyu</strong>
+                          <span>@enginakyurt</span>
+                      </div>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+              <div class="client-comment">
+                  <p>I had a wonderful time on my recent trip to Greece. I was an independent party of one within the security of a friendly tour group, a winning combination. The trip was strenuous but both tour guides,understanding, knowledgeable, and helpful. </p>
+              </div>
+          </div>
+          <div class="review-box">
+              <div class="box-top">
+                  <div class="profile"></div>
+                      <div class="profile-img">
+                          <img src="images/image-2.jpeg">
+                      </div>
+                      <div class="name-user">
+                          <strong>Niraj Mehta</strong>
+                          <span>@nirajmehtaweb</span>
+                      </div>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+              <div class="client-comment">
+                  <p> We returned from our tour toTurkey a week ago and were full of good memories about the country, Turkish people and beautiful scenery. </p>
+              </div>
+          </div>
+          <div class="review-box">
+              <div class="box-top">
+                  <div class="profile"></div>
+                      <div class="profile-img">
+                          <img src="images/image-3.jpeg">
+                      </div>
+                      <div class="name-user">
+                          <strong>Jennie</strong>
+                          <span>@jennie123rs</span>
+                      </div>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+              <div class="client-comment">
+                  <p>
+                      “Some hotels were too far out of town. Our was great. Provided dinners and lunch were lackluster. At two dinners we were served the same entree.</p>
+              </div>
+          </div>
+          <div class="review-box">
+              <div class="box-top">
+                  <div class="profile"></div>
+                      <div class="profile-img">
+                          <img src="images/image-4.jpeg">
+                      </div>
+                      <div class="name-user">
+                          <strong>Jonh Deo</strong>
+                          <span>@jonhdeowebde</span>
+                      </div>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+              <div class="client-comment">
+                  <p>It was well organized not too many people. Everyone was very nice mostly on time. The guide was excellent. he was nice gave us lots of information very pleasant.</p>
+              </div>
+          </div>
+          <div class="review-box">
+              <div class="box-top">
+                  <div class="profile"></div>
+                      <div class="profile-img">
+                          <img src="images/image-5.jpeg">
+                      </div>
+                      <div class="name-user">
+                          <strong>Mary Macleod</strong>
+                          <span>@marymacleod</span>
+                      </div>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+              <div class="client-comment">
+                  <p>Extremely planned, full days, lots of exposure to culture. Great way to travel internationally and get a sampling of Culture and history.</p>
+              </div>
+          </div>
+          
+          <div class="review-box">
+              <div class="box-top">
+                  <div class="profile"></div>
+                      <div class="profile-img">
+                          <img src="images/image-6.jpeg">
+                      </div>
+                      <div class="name-user">
+                          <strong>Rowena Kline</strong>
+                          <span>@klinerowena</span>
+                      </div>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+              <div class="client-comment">
+                  <p>The tour itself was very good. The number of flights and layovers (especially the return trip) was unacceptable.</p>
+              </div>
+          </div>
+          
+      </div>
+  </section>
+  <!-- review end-->
+
+
+
+  
+
+<!-- Contact us form start-->
+ <div class="container1" id="contact">
+   <form>
+       <h1>Contact Us Form</h1>
+       <input type="text" id="firstname" placeholder="First Name" required>
+       <input type="text" id="lastname" placeholder="Last Name" required>
+       <input type="email" id="email" placeholder="Email" required>
+       <input type="text" id="mobilenumber" placeholder="Mobile Number" required>
+       <h4>Type Your Message Here...</h4>
+       <textarea required></textarea>
+       <input type="submit" value="Send" id="button">
+   </form>
+</div>
+
+<!-- Contact end -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>about us</h3>
+          <p><b>Travel</b> is committed to providing our clients with exceptional service a complete end to end booking solution covering all aspects of your travel needs tailored in house at an affordable price with pro-active customer service</p>
+      </div>
+      <div class="box">
+          <h3>branch locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">japan</a>
+          <a href="#">france</a>
+      </div>
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home">home</a>
+          <a href="#book">book</a>
+          <a href="#packages">packages</a>
+          <a href="#services">services</a>
+          <a href="#gallery">gallery</a>
+          <a href="#review">review</a>
+          <a href="#contact">contact</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+  </div>
+
+  <h1 class="credit"> created by <span> BVITIANS </span> | all rights reserved! </h1>
+
+</section>
+
+<script src="js/script.js"></script>
+
+       
+  </body>
+</html>

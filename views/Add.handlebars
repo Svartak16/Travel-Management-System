@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <form action="/adduser">
+          <div class="inputBox">
+              <h3>where to</h3>
+              <input type="text" name="destination" placeholder="place name">
+          </div>
+          <div class="inputBox">
+              <h3>how many</h3>
+              <input type="number"name="guests" placeholder="number of guests">
+          </div>
+          <div class="inputBox">
+              <h3>arrivals</h3>
+              <input type="text" name="adate">
+          </div>
+          <div class="inputBox">
+              <h3>leaving</h3>
+              <input type="text" name="ldate">
+          </div>
+          <input type="submit" class="btn" value="book now">
+      </form>
+           {{#if msg}}
+          <h3>User Added</h3>
+          {{/if}}
+  </div>
+
+</body>
+</html>
