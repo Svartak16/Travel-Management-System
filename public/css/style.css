@@ -139,7 +139,11 @@ header .navbar a:hover{
    text-transform:capitalize;
    text-decoration:none;
    display:inline-block;
+<<<<<<< HEAD
+   background-color: white;
+=======
    background-color: transparent;
+>>>>>>> 357b88cbc2cdf7c84a1f30ffac10e4502a161cc3
    color:black;
    font-size:25px;
    border:2px solid black;
@@ -198,6 +202,195 @@ header .navbar a:hover{
    padding:1rem 0;
    color:#666;
  }
+
+<<<<<<< HEAD
+
+  /* Style for the radio buttons and labels */
+=======
+ /* Style for the radio buttons and labels */
+>>>>>>> 357b88cbc2cdf7c84a1f30ffac10e4502a161cc3
+.radio-group {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+ }
+ 
+ .radio-container {
+   display: flex;
+   gap: 2rem; /* Space between radio buttons */
+   align-items: center;
+ }
+ 
+ .radio-container input[type="radio"] {
+   accent-color: #666; /* Radio button color */
+   width: 1.2rem;
+   height: 1.2rem;
+   margin-right: 0.5rem;
+   cursor: pointer;
+ }
+ 
+ .radio-container label {
+   font-size: 1.7rem;
+   color: #333;
+   cursor: pointer;
+   text-transform: none;
+ }
+ 
+ /* Align the radio buttons and labels with the rest of the input fields */
+ .book .row form .inputBox h3 {
+   font-size: 2rem;
+   padding: 1rem 0;
+   color: #666;
+ }
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 357b88cbc2cdf7c84a1f30ffac10e4502a161cc3
+ /* General input field styling */
+ .book .row form .inputBox input {
+   width: 100%;
+   padding: 1rem;
+   border: 0.1rem solid rgba(0, 0, 0, 0.1);
+   font-size: 1.7rem;
+   color: #333;
+   text-transform: none;
+   margin-bottom: 1rem;
+ }
+ 
+ /* Styling for the submit button */
+ .book .row form .btn {
+   background-color: #007BFF;
+   color: white;
+   padding: 1rem 2rem;
+   border: none;
+   cursor: pointer;
+   font-size: 1.7rem;
+   text-transform: uppercase;
+ }
+ 
+ .book .row form .btn:hover {
+   background-color: #0056b3;
+ }
+
+ /* Card section styling */
+.card-section {
+   margin-top: 2rem;
+ }
+ 
+ .card {
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin-bottom: 1.5rem;
+   width: 100%;
+   text-align: center;
+   transition: 0.3s;
+ }
+ 
+ .card-content h3 {
+   font-size: 2rem;
+   color: #333;
+   margin-bottom: 10px;
+ }
+ 
+ .card-content p {
+   font-size: 1.2rem;
+   color: #666;
+ }
+ 
+ .card:hover {
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ }
+<<<<<<< HEAD
+
+ .booking-section {
+   flex: 2;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+h2 {
+   font-size: 1.5em;
+   margin-bottom: 15px;
+}
+
+.booking-form {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+.input-field {
+   flex: 1;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+
+.btn {
+   background-color: #6c43f2;
+   color: #fff;
+   border: none;
+   padding: 10px 15px;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   background-color: #5b3ddf;
+}
+
+.flight-option {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+   border-bottom: 1px solid #ccc;
+}
+
+.flight-info {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.flight-time, .flight-arrival {
+   font-size: 0.9em;
+}
+
+.flight-details img {
+   height: 40px;
+   width: auto;
+}
+
+.flight-price {
+   text-align: center;
+}
+
+.sidebar {
+   flex: 1;
+   margin-left: 20px;
+}
+
+.option {
+   background-color: #fff;
+   padding: 15px;
+   border-radius: 8px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.option img {
+   width: 100%;
+   border-radius: 8px;
+   margin-bottom: 10px;
+}
+
+=======
+>>>>>>> 357b88cbc2cdf7c84a1f30ffac10e4502a161cc3
+ 
 /* book section ends */
 
 /*gallery section*/
