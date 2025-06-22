@@ -41,7 +41,7 @@
                 <div class="inner">
                 <p>LIFE IS SHORT AND THE WORLD IS WIDE</p>
                 <p>TO TRAVEL IS TO LIVE</p>
-                <a href="#">Discover More</a>
+                <a href="https://www.foratravel.com/">Discover More</a>
                 </div>
                 </div>
                 </div>
@@ -55,37 +55,56 @@
 
  <section class="book" id="book">
   <div class="row">
+    <div class="image">
+      <img src="/images/book.jpeg" alt="Booking Image">
+    </div>
 
-      <div class="image">
-          <img src="images/book.jpeg" alt="">
+    <form id="bookingForm" action="/adduser" method="POST">
+      <div class="inputBox">
+        <h3>Book for</h3>
+        <select name="bookingType" id="bookingType" required>
+          <option value="">Select Booking Type</option>
+          <option value="hotel">Hotel</option>
+          <option value="flight">Flight</option>
+        </select>
       </div>
 
-      <form action="/adduser">
-          <div class="inputBox">
-              <h3>where to</h3>
-              <input type="text" name="destination"placeholder="place name">
-          </div>
-          <div class="inputBox">
-              <h3>how many</h3>
-              <input type="number"name="guests" placeholder="number of guests">
-          </div>
-          <div class="inputBox">
-              <h3>arrivals</h3>
-              <input type="text" name="adate">
-          </div>
-          <div class="inputBox">
-              <h3>leaving</h3>
-              <input type="text" name="ldate">
-          </div>
-          <input type="submit" class="btn" value="book now">
-      </form>
-           {{#if msg}}
-          <h3>User Added</h3>
-          {{/if}}
+      <div class="inputBox">
+        <h3>Select Company</h3>
+        <select name="companyName" id="companyName" required>
+          <option value="">Select Company</option>
+        </select>
+      </div>
+
+      <div class="inputBox">
+        <h3>Where to</h3>
+        <input id="destination" type="text" name="destination" placeholder="Place name" required>
+      </div>
+
+      <div class="inputBox">
+        <h3>How many</h3>
+        <input type="number" name="guests" placeholder="Number of guests" required>
+      </div>
+
+      <div class="inputBox">
+        <h3>Arrivals</h3>
+        <input type="date" name="adate" required>
+      </div>
+
+      <div class="inputBox">
+        <h3>Leaving</h3>
+        <input type="date" name="ldate" required>
+      </div>
+
+      <input type="submit" class="btn" value="Book Now">
+    </form>
+
+    <!-- Display a success or failure message -->
+    {{#if msg}}
+      <h3>{{msg}}</h3>
+    {{/if}}
   </div>
-
-</section> 
-
+</section>
 <!-- book section ends -->
 
 
@@ -187,7 +206,7 @@
                    <img src="images/city-1.jpg" alt="">
                 </div>
                 <div class="content">
-                   <h3><i class="fas fa-map-marker-alt"></i>Europe</h3>
+                   <h3 class="loc-name"><i class="fas fa-map-marker-alt"></i>Europe</h3>
                    <p>Europe is a landmass, which is either considered a continent in its own right or a subcontinent of Eurasia, located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.</p>
                    <div class="stars">
                       <i class="fas fa-star"></i>
@@ -197,7 +216,9 @@
                       <i class="far fa-star"></i>
                    </div>
                    <div class="price"> $600.00 </div>
-                   <a href="#book" class="btn">Book Now</a>
+                   <br>
+                  <br>
+                   <a href="#book" class="btn book-now-btn" >Book Now</a>
                 </div>
              </div>
        
@@ -206,7 +227,7 @@
                    <img src="images/city-2.jpg" alt="">
                 </div>
                 <div class="content">
-                  <h3><i class="fas fa-map-marker-alt"></i>Singapore</h3>
+                  <h3 class="loc-name"><i class="fas fa-map-marker-alt"></i>Singapore</h3>
                   <p>Singapore is a sovereign island country and city-state in maritime Southeast Asia. It has the third highest population density in the world.</p>
                   <div class="stars">
                      <i class="fas fa-star"></i>
@@ -216,7 +237,9 @@
                      <i class="fas fa-star"></i>
                   </div>
                   <div class="price"> $600.00 </div>
-                  <a href="#book" class="btn">Book Now</a>
+                  <br>
+                  <br>
+                  <a href="#book" class="btn book-now-btn" >Book Now</a>
                 </div>
              </div>
        
@@ -225,7 +248,7 @@
                    <img src="images/city-3.jpg" alt="">
                 </div>
                 <div class="content">
-                  <h3><i class="fas fa-map-marker-alt"></i>France</h3>
+                  <h3 class="loc-name"><i class="fas fa-map-marker-alt"></i>France</h3>
                   <p>France is a transcontinental country spanning Western Europe and overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans.</p>
                   <div class="stars">
                      <i class="fas fa-star"></i>
@@ -234,8 +257,10 @@
                      <i class="fas fa-star"></i>
                      <i class="far fa-star"></i>
                   </div>
-                  <div class="price"> $600.00 </div>
-                  <a href="#book" class="btn">Book Now</a>
+                  <div class="price"> $400.00 </div>
+                  <br>
+                  <br>
+                  <a href="#book" class="btn book-now-btn">Book Now</a>
                 </div>
              </div>
              
@@ -245,7 +270,7 @@
                    <img src="images/city-4.jpg" alt="">
                 </div>
                 <div class="content">
-                  <h3><i class="fas fa-map-marker-alt"></i>Dubai</h3>
+                  <h3 class="loc-name"><i class="fas fa-map-marker-alt"></i>Dubai</h3>
                   <p>Dubai is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai.</p>
                   <div class="stars">
                      <i class="fas fa-star"></i>
@@ -254,8 +279,10 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                   </div>
-                  <div class="price"> $600.00 </div>
-                  <a href="#book" class="btn">Book Now</a>
+                  <div class="price"> $800.00 </div>
+                  <br>
+                  <br>
+                  <a href="#book" class="btn book-now-btn">Book Now</a>
                 </div>
              </div>
        
@@ -264,7 +291,7 @@
                    <img src="images/city-5.jpg"alt="">
                 </div>
                 <div class="content">
-                  <h3><i class="fas fa-map-marker-alt"></i>Germany</h3>
+                  <h3 class="loc-name"><i class="fas fa-map-marker-alt"></i>Germany</h3>
                   <p>Germany is a country in Central Europe. It is the second most populous country in Europe after Russia, and the most populous member state of the European Union.</p>
                   <div class="stars">
                      <i class="fas fa-star"></i>
@@ -273,8 +300,10 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                   </div>
-                  <div class="price"> $600.00 </div>
-                  <a href="#book" class="btn">Book Now</a>
+                  <div class="price"> $700.00 </div>
+                  <br>
+                  <br>
+                  <a href="#book" class="btn book-now-btn">Book Now</a>
                 </div>
              </div>
        
@@ -283,7 +312,7 @@
                    <img src="images/city-6.jpeg" alt="">
                 </div>
                 <div class="content">
-                  <h3><i class="fas fa-map-marker-alt"></i>Mauritius</h3>
+                  <h3 class="loc-name"><i class="fas fa-map-marker-alt"></i>Mauritius</h3>
                   <p>Mauritius is an island nation in the Indian Ocean about 2,000 kilometres off the southeast coast of the African continent, east of Madagascar.</p>
                   <div class="stars">
                      <i class="fas fa-star"></i>
@@ -292,8 +321,10 @@
                      <i class="fas fa-star"></i>
                      <i class="far fa-star"></i>
                   </div>
-                  <div class="price"> $600.00 </div>
-                  <a href="#book" class="btn">Book Now</a>
+                  <div class="price"> $900.00 </div>
+                  <br>
+                  <br>
+                  <a href="#book" class="btn book-now-btn">Book Now</a>
                 </div>
              </div>
        </section>
@@ -334,21 +365,14 @@
            <img src="images/5.png" alt="">
            <h3>Mountain Climbing</h3>
        </div>
-
        <div class="box">
            <img src="images/6.png" alt="">
            <h3>Skiing</h3>
        </div>
     </div>
-
-   
 </section>
 <!-- services section ends  -->
 <script src="script.js"></script>
-
-
-
-
        <!-- review start-->
     <section id="review">
       <!--heading-->
@@ -468,7 +492,6 @@
                   <p>Extremely planned, full days, lots of exposure to culture. Great way to travel internationally and get a sampling of Culture and history.</p>
               </div>
           </div>
-          
           <div class="review-box">
               <div class="box-top">
                   <div class="profile"></div>
@@ -520,9 +543,15 @@
 
 <section class="footer">
 
+
+  <div class="box-container">
+
+      <div class="box" style="margin-left: 2rem;">
+
   <div class="box-container">
 
       <div class="box">
+
           <h3>about us</h3>
           <p><b>Travel</b> is committed to providing our clients with exceptional service a complete end to end booking solution covering all aspects of your travel needs tailored in house at an affordable price with pro-active customer service</p>
       </div>
@@ -553,12 +582,64 @@
 
   </div>
 
-  <h1 class="credit"> created by <span> BVITIANS </span> | all rights reserved! </h1>
+  <h1 class="credit"> created by <span> Sejal  </span> | all rights reserved! </h1>
 
 </section>
 
-<script src="js/script.js"></script>
+
+<script>
+  document.getElementById('bookingType').addEventListener('change', function() {
+    const bookingType = this.value;
+    const companyNameSelect = document.getElementById('companyName');
+    let optionsHTML = '<option value="">Select Company</option>';
+
+    // Clear the current options
+    companyNameSelect.innerHTML = '';
+
+    if (bookingType === 'hotel') {
+      // Add hotel options dynamically
+      const hotels = ['Bliss Inn', 'Vista Hotel', 'Reef Lodge']; // Replace with actual hotel data from DB or array
+      hotels.forEach(hotel => {
+        optionsHTML += `<option value="${hotel}">${hotel}</option>`;
+      });
+    } else if (bookingType === 'flight') {
+      // Add flight options dynamically
+      const flights = ['Air India', 'Indigo', 'Spicejet']; // Replace with actual flight data from DB or array
+      flights.forEach(flight => {
+        optionsHTML += `<option value="${flight}">${flight}</option>`;
+      });
+    }
+
+    // Insert options into the companyName dropdown
+    companyNameSelect.innerHTML = optionsHTML;
+  });
+</script>
+<script>
+   // Get all the Book Now buttons and location names
+const buttons = document.querySelectorAll(".book-now-btn");
+const locNames = document.querySelectorAll(".loc-name");
+
+buttons.forEach((button, index) => {
+  button.addEventListener("click", function() {
+    // Get the location name for the corresponding button
+    const locationName = locNames[index].childNodes[1].nodeValue.trim();
+    
+    // Set the value of the destination input field
+    document.getElementById("destination").value = locationName;
+    
+    // Scroll to the booking form
+    document.getElementById("destination").scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+</script>
 
        
+
+  </div>
+  
+</section>
+<script src="js/script.js"></script> 
+
   </body>
 </html>
